@@ -1,5 +1,5 @@
 /// <summary>
-/// 多线程交替输出
+/// Multithreaded alternate output
 /// </summary>
 #include<iostream>
 #include<windows.h>
