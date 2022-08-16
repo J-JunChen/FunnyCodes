@@ -147,7 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Projects\SyncPrints.cpp" />
+    <ClCompile Include="Projects\SyncPrints.h" />
+    <ClCompile Include="Projects\SandBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Projects\FuncPtr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
