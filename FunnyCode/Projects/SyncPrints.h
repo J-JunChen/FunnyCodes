@@ -7,14 +7,14 @@
 #include<condition_variable>
 using namespace std;
 
-const int Len = 10;
-const int Start = 1, End = 10;
-const int SleepTime = 50;
+static const int Len = 10;
+static const int Start = 1, End = 10;
+static const int SleepTime = 50;
 
-mutex mtxs[Len];
-condition_variable cvs[Len];
+static mutex mtxs[Len];
+static condition_variable cvs[Len];
 
-void func(int idx) {
+static void func(int idx) {
 	unique_lock locker(mtxs[idx]);
 	int next = (idx + 1) % Len;
 	for (int i = Start; i <= End; i++) {
