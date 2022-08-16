@@ -25,7 +25,8 @@ void func(int idx) {
 	cvs[next].notify_one();
 }
 
-int main()
+
+void TestSync() 
 {
 	thread ts[Len];
 	for (int i = 0; i < Len; i++) {
@@ -35,3 +36,4 @@ int main()
 	for (int i = 0; i < Len; i++)
 		ts[i].join();
 }
+
